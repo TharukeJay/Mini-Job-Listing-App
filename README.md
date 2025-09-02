@@ -79,3 +79,10 @@ This app follows a **layered clean architecture approach**:
     - Theme switching
 
 ---
+
+## Screenshots
+
+![a4](https://github.com/user-attachments/assets/ac0ed035-d08f-4866-872f-b9c751436bea)
+![a3](https://github.com/user-attachments/assets/5eca5181-f590-4458-92c0-52e8e80041a6)
+![a2](https://github.com/user-attachments/assets/64ef4a56-f5d5-481d-8afc-dcaf8d23687b)
+![a1](https://github.com/user-attachments/assets/0e7f760f-6a94-4d11-adc5-2f650a3017c5)
