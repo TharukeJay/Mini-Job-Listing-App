@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../models/jobModel.dart';
-import '../services/api_service.dart';
+import '../data/models/jobModel.dart';
+import '../data/services/api_service.dart';
 
 class JobProvider with ChangeNotifier {
   final ApiService apiService;

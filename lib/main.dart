@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mini_job/presentation/screens/job_list_page.dart';
-import 'package:mini_job/services/api_service.dart';
 import 'package:provider/provider.dart';
+import 'data/services/api_service.dart';
 import 'domain/job_provider.dart';
 import 'domain/theme_provider.dart';
 

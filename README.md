@@ -1,16 +1,81 @@
-# mini_job
+# Job Listing App
 
-Mini Job Listing App
+A simple **Job Listing Mobile Application** built with **Flutter** for the Software Engineer Flutter Assessment Test.
 
-## Getting Started
+The app demonstrates:
+- Material 3 UI & responsiveness
+- REST API integration
+- State management with Provider
+- Local storage for favorites
+- Error handling
+- Clean architecture
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Job List Page**
+    - Fetches jobs from a mock REST API (https://68b6869573b3ec66cec1ceef.mockapi.io/api/v1/job).
+    - Displays job title, company, location, and type.
+    - Includes a search bar to filter jobs by **title** or **location**.
+    - Favorite jobs with a heart button.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Job Details Page**
+    - Shows full job details (description, salary etc.).
+    - "Apply" button.
+    - Favorite toggle in AppBar.
+
+- **Favorites Page**
+    - Displays list of favorite jobs.
+    - Data is persisted using **SharedPreferences**.
+
+- **Bonus Features**
+    - Theme toggle (**light / dark **).
+    - Animated favorite icons with **scale transition**.
+    - Page transitions with **fade animations**.
+
+---
+
+## Setup Instructions
+
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/TharukeJay/Mini-Job-Listing-App.git
+   cd job_listing_app
+   ```
+
+2. **Install Dependencies**
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run the App**
+   ```bash
+   flutter run
+   ```
+
+4. **Tested On**
+    - Flutter 3.22+
+    - Android Emulator
+
+---
+
+## Architecture
+
+This app follows a **layered clean architecture approach**:
+
+- **Data Layer** → Fetches and parses job data from REST API.
+- **Domain Layer** → Business logic (state management via Provider).
+- **Presentation Layer** → UI screens and Material 3 widgets.
+
+---
+
+## State Management
+
+- Used **Provider** (`ChangeNotifier`) to manage:
+    - Jobs fetching from API
+    - Favorites (with persistence)
+    - Search functionality
+    - Theme switching
+
+---
